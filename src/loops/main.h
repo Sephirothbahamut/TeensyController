@@ -10,8 +10,15 @@ namespace loops
 	class main : public utils::loop
 		{
 		public:
-			main() : loop{100} { }
+			inline main() : loop{100} { redraw(); }
 			
+			inline void redraw()
+				{
+				color_t a{0};
+				color_t b{0.f, .1f, .5f};
+				tft.fillScreenVGradient(a.data, b.data);
+				}
+
 			virtual void step() noexcept final override
 				{
 				//debug
@@ -25,14 +32,7 @@ namespace loops
 					{
 					settings settings;
 					settings.run();
-					/*Serial.println("Entered calibration bounds mode");
-					calibration_bounds bounds;
-					bounds.run();
-					Serial.println("Exited calibration bounds mode");
-					Serial.println("Entered calibration zero mode");
-					calibration_zero zero;
-					zero.run();
-					Serial.println("Exited calibration zero mode");*/
+					redraw();
 					}
 				}
 		private:

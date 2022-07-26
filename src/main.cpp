@@ -1,17 +1,17 @@
 #include <Arduino.h>
+#include "utils/ui/display.h"
 #include "loops/main.h"
 
-#include <ILI9341_t3.h>
-#include <font_Arial.h> // from ILI9341_t3
-#include <XPT2046_Touchscreen.h>
-#include <SPI.h>
 
 void setup()
 	{
 	utils::hardware::pin::analog::init();
-	pinMode(LED_BUILTIN, OUTPUT);
-	digitalWrite(LED_BUILTIN, LOW);
+	//pinMode(LED_BUILTIN, OUTPUT);
+	//digitalWrite(LED_BUILTIN, LOW);
 	Serial.begin(9600);
+  tft.begin();
+  ts.begin();
+
 	}
 	
 void loop() 
@@ -22,7 +22,12 @@ void loop()
 
 	}
 
-/*/#define CS_PIN  8
+/*#include <ILI9341_t3.h>
+#include <font_Arial.h> // from ILI9341_t3
+#include <XPT2046_Touchscreen.h>
+#include <SPI.h>
+
+#define CS_PIN  8
 #define TFT_DC  9
 #define TFT_CS 10
 // MOSI=11, MISO=12, SCK=13
@@ -85,4 +90,4 @@ void loop() {
   }
   wastouched = istouched;
   delay(100);
-}*/
+}/**/
