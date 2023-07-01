@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "joystick")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/COM-09032/COM-09032.kicad_sym")(options "")(descr ""))
+  (lib (name "teensy")(type "Legacy")(uri "${KIPRJMOD}/../Libraries/teensy_library-master/teensy.lib")(options "")(descr ""))
+  (lib (name "display")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/Display/tft_320x240.kicad_sym")(options "")(descr ""))
+)

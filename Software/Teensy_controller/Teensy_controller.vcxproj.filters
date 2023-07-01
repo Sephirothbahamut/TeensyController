@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\loops">
+      <UniqueIdentifier>{c45edecb-8046-42bb-b256-859db9a910d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\states">
+      <UniqueIdentifier>{16fdbc75-dd07-457a-9b7d-dd14863701e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{a143d394-e1b1-4dd3-9492-f86e24ffeea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\hardware">
+      <UniqueIdentifier>{55f9f2d0-1868-4415-9468-178e0234d3ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\ui">
+      <UniqueIdentifier>{0e2eb7e4-91ad-459a-8d76-d2621be005e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\hardware\analog">
+      <UniqueIdentifier>{fcfa9950-b4d5-4550-a010-a33776123747}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils\hardware\digital">
+      <UniqueIdentifier>{a8e7b8b5-04ed-4ae4-b2fd-5e5f8ef645c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\loop.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\state.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\types.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\hardware\pin.h">
+      <Filter>Header Files\utils\hardware</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\hardware\analog\joystick.h">
+      <Filter>Header Files\utils\hardware\analog</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\hardware\digital\button.h">
+      <Filter>Header Files\utils\hardware\digital</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\hardware\digital\joystick.h">
+      <Filter>Header Files\utils\hardware\digital</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\ui\display.h">
+      <Filter>Header Files\utils\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\ui\hardware_draw.h">
+      <Filter>Header Files\utils\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\ui\layer.h">
+      <Filter>Header Files\utils\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\calibration.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\general.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\main.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+    <ClInclude Include="src\states\settings.h">
+      <Filter>Header Files\states</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
